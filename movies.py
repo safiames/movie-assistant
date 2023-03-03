@@ -10,6 +10,9 @@ movie_summaries = {
     "Ghost Lab": "A Thai horror film that follows two doctors, Wee and Gla, who become obsessed with proving the existence of ghosts after experiencing a paranormal encounter during a hospital emergency. They conduct a series of experiments to document and analyze supernatural phenomena, which leads them to confront their own personal demons and the consequences of their actions. "
 }
 
+# create a dictionary to store the movies selected for each date
+dates_to_movies = {}
+
 while True:
 
     # ask the user to enter a command
@@ -20,13 +23,22 @@ while True:
     # command 'pick a movie' will provide random movie from the list
     if command == "pick a movie":
         random_movie = random.choice(movie_list)
-    
-
-        
 
         # program prints random movie name and a summary
         print("Recommended movie: " + random_movie)
         print("Summary: " + movie_summaries[random_movie])
+
+    # command 'pick a date' will provide random movie for the specific date(s)'
+    elif command == "pick a date":
+        num_dates = int(input("How many dates do you want to enter? "))
+        for i in range(num_dates):
+            date = input("Enter date #" + str(i+1) + ": ")
+            random_movie = random.choice(movie_list)
+            print("For " + date + ", we recommend: " + random_movie)
+            print("Summary: " + movie_summaries[random_movie])
+
+    # command 'quit' will end the program
+    elif command == "quit":
         break
 
     else:
