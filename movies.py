@@ -10,6 +10,14 @@ movie_summaries = {
     "Ghost Lab": "A Thai horror film that follows two doctors, Wee and Gla, who become obsessed with proving the existence of ghosts after experiencing a paranormal encounter during a hospital emergency. They conduct a series of experiments to document and analyze supernatural phenomena, which leads them to confront their own personal demons and the consequences of their actions. "
 }
 
+movie_genres = {
+    "2gether: The Movie": ["romance", "comedy"],
+    "Love of Siam": ["mystery", "Thai"],
+    "Yes Or No": ["LGBTQ", "Thai", "romance"],
+    "Tootsies and the Fake": ["comedy", "Thai"],
+    "Ghost Lab": ["supernatural", "horror"]
+}
+
 # create a dictionary to store the movies selected for each date
 dates_to_movies = {}
 
