@@ -18,6 +18,12 @@ movie_genres = {
     "Ghost Lab": ["supernatural", "horror"]
 }
 
+# create a list of all the movie genres
+all_genres = sum(movie_genres.values(), [])
+all_genres = list(dict.fromkeys(all_genres))
+
+
+
 # create a dictionary to store the movies selected for each date
 dates_to_movies = {}
 
@@ -44,6 +50,11 @@ while True:
             random_movie = random.choice(movie_list)
             print("For " + date + ", we recommend: " + random_movie)
             print("Summary: " + movie_summaries[random_movie])
+
+    # command 'choose a genre' provides a list of movie genres
+    if command == "choose a genre":
+        print(all_genres)
+
 
     # command 'quit' will end the program
     elif command == "quit":
