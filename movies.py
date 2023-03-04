@@ -23,12 +23,9 @@ all_genres = sum(movie_genres.values(), [])
 all_genres_set = set(all_genres)
 all_genres_list = list(all_genres_set)
 
-# list for found movies genres
-suggested_movies_from_genres = []
 
 # create a dictionary to store the movies selected for each date
 dates_to_movies = {}
-
 while True:
 
     # ask the user to enter a command
@@ -58,15 +55,18 @@ while True:
         print(all_genres_list)
         chosen_genre = input("Please enter the name of the genre you'd like to choose: ")
 
+        # list for found movies genres
+        suggested_movies_from_genres = []
+
         for movie, genres in movie_genres.items():
-            if chosen_genre in genres:
+            if chosen_genre in genres and movie in movie_list:
                 suggested_movies_from_genres.append(movie)
         print(suggested_movies_from_genres)
-
+    elif command not in all_genres_list:
+        print("No movies in that genre.")
 
     # command 'quit' will end the program
     elif command == "quit":
         break
-
-else:
+    else:
         print("Invalid command. Please enter a valid command.")
