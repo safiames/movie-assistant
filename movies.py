@@ -20,7 +20,8 @@ movie_genres = {
 
 # create a list of all the movie genres
 all_genres = sum(movie_genres.values(), [])
-all_genres = list(dict.fromkeys(all_genres))
+all_genres_set = set(all_genres)
+all_genres_list = list(all_genres_set)
 
 
 
@@ -53,7 +54,7 @@ while True:
 
     # command 'choose a genre' provides a list of movie genres
     if command == "choose a genre":
-        print(all_genres)
+        print(all_genres_list)
 
 
     # command 'quit' will end the program
