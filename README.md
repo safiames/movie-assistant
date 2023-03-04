@@ -1,37 +1,32 @@
-# Foobar
 
-Foobar is a Python library for dealing with word pluralization.
+# Movie Assistant
+
+Helps you to choose a movie from a list of movies you want to watch
+
+
+## Tech Stack
+
+This project was built using Python
+
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Install my-project with npm
 
 ```bash
-pip install foobar
+  installation instructions
 ```
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
+    
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Acknowledgements
+
+Thanks to the awesome teacher Big
+
+## Badges
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
