@@ -16,7 +16,14 @@ Install my-project with npm
 ```bash
   installation instructions
 ```
-    
+## Usage
+
+Available commands:
+  - pick a movie
+  - pick a date
+  - pick a genre
+  - quit
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
