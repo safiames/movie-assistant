@@ -11,18 +11,31 @@ This project was built using Python
 
 ## Installation
 
-Install my-project with npm
-
-```bash
-  installation instructions
-```
+1. clone the repository
+    ```
+    git clone https://github.com/safiames/movie-assistant.git
+    ```
+2. change directory to movie-assistant
+    ```
+    cd movie-assistant
+    ```
 ## Usage
+```
+python3 movies.py
+```
+The program will ask you to input commands.
+Following commands are available:
 
-Available commands:
-  - pick a movie
-  - pick a date
-  - pick a genre
-  - quit
+`pick a movie` prints a random movie from the list and its summary
+
+`pick a date` lets user to specify how many and which dates they want a suggestion for
+
+`pick a genre` prints a list of genres to choose from
+
+`quit` exits the program
+
+
+  
 
 ## License
 

@@ -51,9 +51,11 @@ while True:
             print("Summary: " + movie_summaries[random_movie])
 
     # command 'choose a genre' provides a list of movie genres
-    if command == "choose a genre":
+    elif command == "choose a genre":
         print(all_genres_list)
         chosen_genre = input("Please enter the name of the genre you'd like to choose: ")
+        if chosen_genre not in all_genres_list:
+            print("No movies in that genre.")
 
         # list for found movies genres
         suggested_movies_from_genres = []
@@ -62,9 +64,7 @@ while True:
             if chosen_genre in genres and movie in movie_list:
                 suggested_movies_from_genres.append(movie)
         print(suggested_movies_from_genres)
-    elif command not in all_genres_list:
-        print("No movies in that genre.")
-
+    
     # command 'quit' will end the program
     elif command == "quit":
         break
