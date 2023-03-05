@@ -23,7 +23,13 @@ all_genres = sum(movie_genres.values(), [])
 all_genres_set = set(all_genres)
 all_genres_list = list(all_genres_set)
 
-
+introduction_text = """The program will ask you to input commands. Following commands are available:
+'pick a movie' = prints a random movie from the list and its summary
+'pick a date'  = lets user to specify how many and which dates they want a suggestion for
+'pick a genre' = prints a list of genres to choose from
+'quit'         = exits the program
+"""
+print(introduction_text)
 # create a dictionary to store the movies selected for each date
 dates_to_movies = {}
 while True:
