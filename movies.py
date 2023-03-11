@@ -1,5 +1,9 @@
 import random
+from datetime import datetime
+now = datetime.now()
+
 from movie_library import movie_list, movie_summaries, movie_genres
+
 
 # create a list of all the movie genres
 all_genres = sum(movie_genres.values(), [])
@@ -39,6 +43,14 @@ while True:
             print("For " + date + ", we recommend: " + random_movie)
             print("Summary: " + movie_summaries[random_movie])
 
+    # command 'enter a date'
+    elif command == "enter a date":
+        day = now.strftime("%A")
+        date = now.strftime("%d/%m/%Y")
+        print("day:", day)
+        print("date:", date)
+        
+    
     # command 'choose a genre' provides a list of movie genres
     elif command == "choose a genre":
         print(all_genres_list)
